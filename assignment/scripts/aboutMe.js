@@ -40,12 +40,12 @@ let allowedPets = 4
 //      if adventurous is true, set `result` to be "Adventures are great!", 
 //      if it's not true,  set `result` to be "How about we stay home?"
 //      Console log the value of `result`
-let result;  // set variable without assigned value
-if (adventurous) {  // conditional if else statement sets value of variable
+let result;  // declare variable without assigned value
+if (adventurous) {  
   result = "Adventures are great!";
 } else {
   result = "How about we stay home?";
-}
+} // conditional if else statement sets value of variable
 console.log(result); //check expected result
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
 //      Create a compound conditional: 
@@ -55,8 +55,8 @@ console.log(result); //check expected result
 
 let diceRoll = "Try again later." //default value set to variable 
 if (luckyNumber === 2 && adventurous) {
-  diceRoll = "Roll the dice!"; //updates conditional
-}
+  diceRoll = "Roll the dice!"; 
+}//updates value of diceRoll
 console.log(diceRoll); //checks for expected result
 
 // 14 - Create a variable called `petStatus`. 
@@ -68,14 +68,14 @@ console.log(diceRoll); //checks for expected result
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
 
-let petStatus; // set variable without assigned value
+let petStatus; // decalre variable without assigned value
 if (pets < allowedPets){ //statement assigns value
   petStatus = "I can have more pets";
 } else if (pets === allowedPets){
   petStatus = "I have enough pets";
 } else if (pets < allowedPets){ //else statements do not take conditions *reminder*
   petStatus = "Oh no, I have too many pets!";
-}
+} //condition sets value to petStatus
 console.log(petStatus); //expected result check
  // STRETCH GOALS:
 
@@ -84,7 +84,14 @@ console.log(petStatus); //expected result check
 //      assigns the highest value to `mostPets`. There's several possibilities --
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
-let mostPets; 
+let mostPets; // set variable
+if (pets > friendsPets) { 
+  mostPets = pets;
+} else { //does not need addicional condition comparison because there are only two options. if the first option is false, than the alernative boolian value is true by default
+  mostPets = friendsPets; 
+} // conditions sets value of mostPets 
+console.log(mostPets);// checks expected outcome
+
 
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
@@ -94,9 +101,26 @@ let mostPets;
 //      Otherwise, "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
+let luckyResult; // set variable without value 
+switch (luckyNumber){ //great option for many or multiple conditions.
+  case 1: //alrenative to if statement
+    luckyResult = "First is the worst";
+    break; //seperates each case
+    case 2: //alrenative to else if statement
+      luckyResult = "Second is the best";
+      break;//seperates each case
+  case 3:  //alrenative to else if statement
+      luckyResult = "Third is the one with the polka dot dress";
+      break; //seperates each case
+  default: //alrenative to else statement
+      luckyResult = "Luck is what happens when preparation meets opportunity";
+} // value is assigned to the variable "luckyResult" after running through the conditions
+console.log(luckyResult); // checks expercted results
 
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
+  result = adventurous ? "Adventures are great!" : "How about we stay home?"; // Great option for boolean values conditionals. 
 
+console.log(result); // checks expercted outcome
 
 
 

@@ -7,7 +7,7 @@ let lastName = 'Haymond';
 //     (remember, you already have variables for this, can you use those?)
 //     Console log the value of `fullName`
 let fullName = 'Heather Haymond';
-console.log('fullName')
+console.log(fullName)
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 //     Console log the value of `luckyNumber`
 let luckyNumber = 11;
@@ -17,19 +17,19 @@ let luckyNumber = 11;
 //     Refer back to the videos if you need help with this one.
 //     Console log the value of `introduction`
 let introduction = "My name is " + fullName + ", and I think " + luckyNumber + " is a winner!";
-console.log('introduction')
+console.log(introduction)// My name is Heather Haymond, and I think 11 is a winner!
 // 6 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 //     Console log the value of `adventurous`
 let adventurous = true
-console.log('adventerous')
+console.log(adventurous) // true
 // 7 - Create a variable named `food`, and set its value to a string of your favorite food
 //     Console log the value of `food`
 let food = 'fruit'
-console.log('food')
+console.log(food)
 // 8 - Create a variable called `pets` and set it to the value of the number of pets you have
 //     Console log the value of `pets`
 let pets = 1
-console.log(pets)
+console.log(pets) // 1
 // 9 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 let friendsPets = 0
 // 10 - Add two pets to your `pets` variable
@@ -46,7 +46,7 @@ if (adventurous) {
 } else {
   result = "How about we stay home?";
 } // conditional if else statement sets value of variable
-console.log(result); //check expected result
+console.log(result); //check expected result - "Adventures are great!"
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
 //      Create a compound conditional: 
 //      if luckyNumber is 2 and adventurous is true,
@@ -57,7 +57,7 @@ let diceRoll = "Try again later." //default value set to variable
 if (luckyNumber === 2 && adventurous) {
   diceRoll = "Roll the dice!"; 
 }//updates value of diceRoll
-console.log(diceRoll); //checks for expected result
+console.log(diceRoll); //checks for expected result - "Try again later."
 
 // 14 - Create a variable called `petStatus`. 
 //      Write a conditional that covers the following:
@@ -76,7 +76,7 @@ if (pets < allowedPets){ //statement assigns value
 } else if (pets < allowedPets){ //else statements do not take conditions *reminder*
   petStatus = "Oh no, I have too many pets!";
 } //condition sets value to petStatus
-console.log(petStatus); //expected result check
+console.log(petStatus); //expected result check - "I can have more pets"
  // STRETCH GOALS:
 
 // 15 - Make a variable called `mostPets` and a conditional that
@@ -90,7 +90,7 @@ if (pets > friendsPets) {
 } else { //does not need addicional condition comparison because there are only two options. if the first option is false, than the alernative boolian value is true by default
   mostPets = friendsPets; 
 } // conditions sets value of mostPets 
-console.log(mostPets);// checks expected outcome
+console.log(mostPets);// checks expected outcome - 2
 
 
 // 16 - Make a variable called `luckyResult`
@@ -115,12 +115,12 @@ switch (luckyNumber){ //great option for many or multiple conditions.
   default: //alrenative to else statement
       luckyResult = "Luck is what happens when preparation meets opportunity";
 } // value is assigned to the variable "luckyResult" after running through the conditions
-console.log(luckyResult); // checks expercted results
+console.log(luckyResult); // checks expercted results -"Luck is what happens when preparation meets opportunity";
 
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
   result = adventurous ? "Adventures are great!" : "How about we stay home?"; // Great option for boolean values conditionals. 
 
-console.log(result); // checks expercted outcome
+console.log(result); // checks expercted outcome - "Adventures are great!"
 
 
 
